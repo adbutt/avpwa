@@ -1,0 +1,95 @@
+// Font settings
+// You can use these font stacks normally with `font-family: $font-sans;` for instance.`
+$font-base: "Open Sans", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+$font-headings: "Open Sans", "Oswald", "Helvetica Neue", Helvetica, sans-serif;
+$font-monospace: "Menlo", "Courier", monospace;
+
+body {
+	font-family: $font-base;
+	background: #fff;
+	color: $invicta-primary;
+	font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-headings;
+	font-weight: 300;
+	color: $avpwa-purple;
+}
+a {
+	color: $avpwa-purple;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	&:hover,
+	&:visited {
+		color: #222;
+	}
+}
+.site-content {
+	a.button {
+		background: $avpwa-purple;
+		border: none;
+		color: $white;
+		font-family: $font-base;
+		padding: 20px 20px;
+		font-weight: 500;
+		display: block;
+		max-width: 300px;
+		font-size: 0.765em;
+		box-sizing: border-box;
+		&:after {
+			content: "\2192";
+			position: absolute;
+			width: 36px;
+			margin-left: 20px;
+			display: inline-block;
+		}
+		&:hover {
+			background: $avpwa-dpurple;
+		}
+		&.clear-button {
+			background: transparent;
+			color: $invicta-primary;
+			padding: 20px 0;
+			&:hover {
+				color: $invicta-dblue;
+			}
+		}
+	}
+	table.filelist th {
+		background-color: $avpwa-dpurple;
+	}
+}
+
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+.cbox {
+	cursor: pointer;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+a.button:visited,
+a.wp-block-button__link:not(.has-background) {
+	color: #ffffff;
+	background-color: $avpwa-purple;
+	font-size: 13px;
+	font-family: $font-base;
+	font-weight: 500;
+	&:hover {
+		background-color: $avpwa-dpurple;
+	}
+}

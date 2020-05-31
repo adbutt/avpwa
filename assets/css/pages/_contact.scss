@@ -1,0 +1,116 @@
+//GRAVITY FORMS
+.page .gform_wrapper {
+	margin-top: 0 !important;
+	.top_label .gfield_label {
+		font-weight: normal;
+		color: $invicta-dblue;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="number"],
+	textarea,
+	select {
+		border: none;
+		border-bottom: 1px solid #dadedd;
+		background: #eee;
+		line-height: 31px;
+	}
+	.gfield_required {
+		display: none;
+	}
+	.top_label div.ginput_container {
+		margin-top: 0 !important;
+	}
+	textarea.medium {
+		height: 80px !important;
+	}
+	input[type="radio"] {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+	.gfield_radio li label {
+		margin: 2px 0 0 0 !important;
+		padding: 10px 20px !important;
+		border: 1px solid #dadedd;
+		border-radius: 3px;
+		// font-size:1.133em!important;
+	}
+	ul li.gfield {
+		margin-top: 50px !important;
+	}
+	.gform_wrapper ul li.gfield.extra_top {
+		margin-top: 80px !important;
+	}
+	ul.gfield_radio li input[type="radio"]:checked + label {
+		font-weight: 400 !important;
+		color: $invicta-dblue;
+		border: 1px solid $invicta-lblue;
+		background-color: $invicta-body;
+	}
+	.g-submit-button {
+		background-color: $avpwa-purple;
+		font-size: 13px;
+		font-weight: 500;
+		text-align: center;
+		position: relative;
+		padding: 20px;
+		font-family: $font-base;
+		@include for-tablets-up {
+			min-width: 300px;
+			text-align: center;
+		}
+		&:hover {
+			background-color: $avpwa-dpurple;
+		}
+	}
+	.gform_page_footer {
+		border-top: none !important;
+	}
+	.gf_progressbar {
+		padding: 0;
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.1);
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		-webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+		-moz-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+		box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+		width: 100%;
+		// background: #bada55;
+		padding-right: 16px;
+		&:after {
+			display: none;
+		}
+	}
+	.gf_progressbar_percentage {
+		height: 4px;
+		text-align: right;
+		font-family: helvetica, arial, sans-serif;
+		font-size: 0 !important;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+		border-radius: 0;
+		line-height: 1;
+		z-index: 999;
+		vertical-align: middle;
+		background: get-color("primary", "gold");
+	}
+	.gf_progressbar_percentage span {
+		display: none;
+	}
+}
+
+//NICE SELECT OVERIDES
+.nice-select {
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #dadedd;
+	width: 100%;
+	padding-left: 0;
+}

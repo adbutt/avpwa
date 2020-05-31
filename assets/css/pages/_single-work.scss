@@ -1,0 +1,100 @@
+.project-banner {
+	.project-branding {
+		box-sizing: border-box;
+		padding: 10% 0 0;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: flex;
+		min-height: 375px;
+		align-items: flex-end;
+		.project-wrap {
+			width: 100%;
+			background: rgb(4, 30, 64);
+			background: linear-gradient(
+				0deg,
+				rgba(4, 30, 64, 0.9) 0%,
+				rgba(4, 30, 64, 0.7) 35%,
+				rgba(4, 30, 64, 0) 100%
+			);
+		}
+	}
+	.project-details {
+		text-align: center;
+		text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+		@include for-desktop-up {
+			text-align: left;
+			max-width: 50%;
+		}
+		.project-sub {
+			text-transform: uppercase;
+			font-weight: 600;
+			color: #fff;
+		}
+		.project-title {
+			font-weight: 600;
+			color: #fff;
+		}
+		.project-copy {
+			color: #fff;
+		}
+	}
+}
+.next-up {
+	padding: 60px 0;
+	clear: both;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	&-wrapper {
+		display: flex;
+		flex: 1;
+		align-items: center;
+		flex-wrap: wrap;
+		@include for-tablets-up {
+			flex-wrap: nowrap;
+		}
+	}
+	&-copy {
+		flex: 0 0 100%;
+		text-align: center;
+		h6 {
+			text-transform: uppercase;
+			color: $invicta-lblue;
+			margin-bottom: 0;
+			font-size: 0.824em;
+			letter-spacing: 0.1em;
+			font-weight: 500;
+		}
+		h3 {
+			color: $invicta-dblue;
+			font-weight: 400;
+			font-size: 2.118em;
+		}
+		@include for-phones {
+			a.button {
+				margin: 0 auto 20px;
+			}
+		}
+		@include for-tablets {
+			padding-right: 60px;
+			flex: 0 1 50%;
+			text-align: left;
+		}
+		@include for-desktop-up {
+			padding-right: 100px;
+			flex: 0 1 50%;
+			text-align: left;
+		}
+	}
+	&-image {
+		flex: 0 0 100%;
+		text-align: center;
+		display: block;
+		min-height: 250px;
+		background-position: 50% 50%;
+		background-size: cover;
+		@include for-tablets-up {
+			flex: 0 1 50%;
+		}
+	}
+}

@@ -1,0 +1,96 @@
+.process-wrapper {
+	// border-top: 10px solid $harry-dblue;
+	padding: 60px 0 0;
+	text-align: center;
+	background: $invicta-body;
+
+	h3 {
+		display: inline-block;
+		color: $invicta-dblue;
+		font-weight: 400;
+		font-size: 2.118em;
+		margin-top: 5px;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+		position: relative;
+		z-index: 3;
+	}
+	.stitle-hold {
+		font-size: 0.882em;
+	}
+	.process-container {
+		// text-align: left;
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		flex-wrap: wrap;
+		// @include for-desktop-up {
+		// 	flex-wrap: nowrap;
+		// }
+		.process-item {
+			// min-width: 280px;
+			padding: 20px;
+			margin: 6px;
+			// padding: 16px;
+			text-align: center;
+			align-items: center;
+			display: flex;
+			flex: 0 1 25%;
+
+			flex-direction: column;
+			box-sizing: border-box;
+			h4 {
+				font-size: 1em;
+				font-weight: 500;
+				margin-top: 20px;
+				color: $invicta-dblue;
+			}
+			// &:nth-child(2n) {
+			// 	background: #fff;
+			// 	border-left: 1px solid #e3e3e3;
+			// 	border-right: 1px solid #e3e3e3;
+			// }
+			a.button {
+				background: $harry-blue;
+				color: #fff;
+				&:hover {
+					background: lighten($harry-blue, 10%);
+				}
+			}
+			@include for-phones {
+				flex-basis: calc(50% - 12px);
+				align-items: center;
+				// border: 1px solid #000;
+				// justify-content: center;
+			}
+			@include for-tablets {
+				flex-basis: calc(33% - 12px);
+				align-items: center;
+			}
+			@include for-desktop-up {
+				flex-basis: calc(25% - 12px);
+				padding: 20px;
+
+				// &:first-of-type {
+				// 	padding-left: 0;
+				// }
+				// &:last-of-type {
+				// 	padding-right: 0;
+				// }
+			}
+		}
+		.process-icon {
+			display: flex;
+			width: 48px;
+			height: 48px;
+			background: $invicta-icon;
+			border-radius: 3px;
+			align-items: center;
+			justify-content: center;
+		}
+		.process-intro {
+			font-size: 0.882em;
+			line-height: 1.8;
+		}
+	}
+}

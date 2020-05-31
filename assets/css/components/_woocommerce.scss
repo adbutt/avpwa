@@ -1,0 +1,15 @@
+.woocommerce a.button {
+	border-radius: 0;
+	border: none;
+	background-color: $harry-blue;
+	color: #fff;
+	font-family: $font-headings;
+	text-transform: uppercase;
+	padding: 0.618em 2em;
+	letter-spacing: 0.05em;
+	line-height: 1.2;
+	&:hover {
+		background-color: lighten($harry-blue, 10%);
+		color: #fff;
+	}
+}

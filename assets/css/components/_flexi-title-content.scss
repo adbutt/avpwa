@@ -1,0 +1,139 @@
+.flexi-title-content {
+	padding: 60px 0;
+	.pl0 {
+		padding-left: 0;
+	}
+	&.lightbbg {
+		background: $invicta-body;
+	}
+	&.medbbg {
+		background: $invicta-lblue;
+		color: #fff !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #fff !important;
+		}
+		.t-title {
+			color: #fff !important;
+		}
+	}
+	&.darkbbg {
+		background: $invicta-dblue;
+		color: #fff !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #fff !important;
+		}
+		.t-title {
+			color: #fff !important;
+		}
+	}
+	&.whitebg {
+		background: #fff;
+	}
+	h4.title-content {
+		color: $invicta-dblue;
+	}
+	.t-title {
+		flex: 0 0 100%;
+		font-size: 2.118em;
+		color: $invicta-dblue;
+		box-sizing: border-box;
+		// max-width: 470px;
+		@include for-tablets-up {
+			flex: 0 1 50%;
+		}
+	}
+	.t-copy {
+		flex: 0 0 100%;
+		font-size: 0.882em;
+		line-height: 1.8;
+		@include for-tablets-up {
+			flex: 0 1 50%;
+		}
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+		h3 {
+			font-size: 2.118em;
+			font-weight: 400;
+			color: $invicta-dblue;
+		}
+		h4 {
+			font-size: 1.133em;
+			font-weight: 500;
+			color: $invicta-dblue;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			li {
+				padding-left: 30px;
+				position: relative;
+				color: $invicta-dblue;
+				&:before {
+					font-family: 'dashicons';
+					font-size: 2em;
+					line-height: 1;
+					content: '\f147';
+					color: $invicta-green;
+					left: -5px;
+					padding-right: 10px;
+					position: absolute;
+				}
+			}
+		}
+	}
+	.flexit {
+		display: flex;
+		flex-wrap: wrap;
+		@include for-tablets-up {
+			flex-wrap: nowrap;
+			// justify-content: center;
+			//align-items: center;
+		}
+	}
+	&.ftc-right .t-title {
+		order: 1;
+		padding: 0 0 40px;
+		@include for-tablets {
+			order: 2;
+			padding: 0;
+		}
+		@include for-desktop-up {
+			order: 2;
+			padding: 0;
+		}
+	}
+	&.ftc-right .t-copy {
+		order: 2;
+		box-sizing: border-box;
+		@include for-tablets {
+			order: 1;
+			padding: 0 60px 0 0;
+			max-width: 470px;
+		}
+		@include for-desktop-up {
+			order: 1;
+			padding: 0 100px 0 0;
+			// max-width: 470px;
+		}
+	}
+	&.ftc-left .t-title {
+		padding: 0 0 40px;
+		@include for-tablets {
+			padding: 0 60px 0 0;
+		}
+		@include for-desktop-up {
+			padding: 0 100px 0 0;
+		}
+	}
+}

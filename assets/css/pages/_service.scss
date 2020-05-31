@@ -1,0 +1,66 @@
+.single-service {
+	.section-titles {
+		padding-bottom: 0;
+	}
+	.our-services {
+		background: $invicta-dblue;
+		padding-bottom: 60px;
+		padding-top: 40px;
+
+		.section-callout {
+			color: #fff;
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+	.service-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.service {
+			display: flex;
+			// flex: 0 50%;
+			// max-width: 570px;
+			margin-top: 30px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+			&.active {
+				opacity: 0.4;
+			}
+			&:last-of-type {
+				border-bottom: none;
+			}
+			@include for-tablets-up {
+				flex: 0 50%;
+				max-width: 570px;
+				&:last-of-type {
+					border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+				}
+			}
+		}
+	}
+	.service-intro-wrap {
+		padding-left: 30px;
+
+		.service-title {
+			color: #fff;
+			font-size: 0.938em;
+			font-weight: 500;
+			margin: 10px 0;
+			line-height: 1;
+		}
+		p.service-intro {
+			font-size: 0.882em;
+			color: rgba(255, 255, 255, 0.5);
+			font-weight: 400;
+		}
+	}
+	.service-icon-wrapper {
+		background: rgba(255, 255, 255, 0.3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 48px;
+		width: 48px;
+		border-radius: 3px;
+	}
+}

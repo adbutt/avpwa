@@ -1,0 +1,25 @@
+.page-template-services-template {
+	.service-main-intro {
+		max-width: 770px;
+		margin: 0 auto;
+		padding: 100px 10px 60px;
+		text-align: center;
+		h2 {
+			color: $invicta-dblue;
+		}
+	}
+	.section-main-title {
+		color: $invicta-dblue;
+		font-weight: 300;
+		padding-bottom: 20px;
+	}
+	.our-services {
+		margin-bottom: 80px;
+		.section-titles {
+			display: none;
+		}
+	}
+	.callout-wrapper {
+		margin-top: 0;
+	}
+}

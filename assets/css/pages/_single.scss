@@ -1,0 +1,109 @@
+.single-post {
+	.content-area {
+		//padding-top: 60px;
+	}
+	.rank-math-breadcrumb {
+		text-transform: uppercase;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+		color: $invicta-lblue;
+		.last {
+			color: $invicta-meta;
+		}
+	}
+	article,
+	.rank-math-breadcrumb {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 5%;
+
+		@include for-tablets-up {
+			padding: 0;
+		}
+	}
+	.entry-header {
+		display: block;
+		// max-width: 650px;
+		margin: 0 auto;
+	}
+	.entry-content {
+		max-width: 650px;
+		margin: 1em auto;
+		font-size: 1.059em;
+		line-height: 1.556em;
+	}
+	.entry-title {
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		color: $invicta-dblue;
+	}
+	.entry-meta {
+		padding-bottom: 20px;
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+	}
+	.entry-meta,
+	.entry-meta a {
+		color: $invicta-meta;
+	}
+	.byline {
+		display: flex;
+	}
+	.author.vcard {
+		display: flex;
+		align-items: center;
+	}
+	.author-url {
+		margin-right: 15px;
+	}
+	.author-av {
+		display: block;
+		width: 36px;
+		height: 36px;
+		margin: 0 15px 0 0;
+		border-radius: 100%;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.post-image-invicta {
+		display: block;
+		width: 100%;
+		background-size: cover;
+		background-position: 50% 50%;
+		min-height: 300px;
+		@include for-tablets-up {
+			min-height: 400px;
+			margin-bottom: 40px;
+		}
+	}
+	.comments-area {
+		max-width: 650px;
+		margin: 0 auto;
+		padding: 0 5%;
+		@include for-tablets-up {
+			padding: 0;
+		}
+	}
+	.entry-content {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $invicta-dblue;
+		}
+		p {
+			font-weight: 300;
+			strong,
+			b {
+				font-weight: 500;
+			}
+		}
+		a {
+			font-weight: 500;
+		}
+	}
+}

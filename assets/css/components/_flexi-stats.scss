@@ -1,0 +1,75 @@
+.stats-wrapper {
+	padding: 60px 0;
+	text-align: center;
+
+	.stitle-hold {
+		font-size: 0.882em;
+	}
+	.stats-container {
+		// text-align: left;
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		flex-wrap: wrap;
+		// align-items: space-between;
+		// justify-content: center;
+		// border-top: 1px solid $invicta-lgrey;
+		@include for-tablets-up {
+			border-bottom: 1px solid $invicta-lgrey;
+		}
+		.stat-item {
+			// margin: 0 auto;
+			margin: 10px 0 40px;
+			position: relative;
+			border-left: 1px solid $invicta-lgrey;
+			min-width: 200px;
+			padding: 0 40px;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			box-sizing: border-box;
+			// text-align: left;
+			&:first-of-type {
+				border-left: none;
+			}
+			@include for-tablets {
+				flex-basis: calc(50% - 12px);
+				align-items: center;
+				&:nth-child(odd) {
+					border-left: none;
+				}
+				// border: 1px solid #000;
+				// justify-content: center;
+			}
+			@include for-phones {
+				flex-basis: 100%;
+				text-align: center;
+				align-items: center;
+				padding: 5px 40px;
+				margin-bottom: 0;
+				border-left: none;
+				&:last-of-type {
+					margin-bottom: 10px;
+				}
+				// border-bottom: 1px solid #bada55;
+			}
+
+			.stat-count {
+				color: $invicta-dblue;
+				font-size: 2.118em;
+				text-align: left;
+			}
+			.stat-title {
+				text-align: left;
+				font-size: 0.882em;
+				font-weight: 400;
+			}
+			@include for-desktop-up {
+				&:first-of-type {
+					border-left: none;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}

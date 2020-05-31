@@ -1,0 +1,65 @@
+.flexi-copy {
+	padding: 60px 0;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $invicta-dblue;
+		font-weight: 400;
+	}
+	&.lightbbg {
+		background: $invicta-body;
+	}
+	&.medbbg {
+		background: $invicta-lblue;
+		color: #fff !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #fff !important;
+		}
+	}
+	&.darkbbg {
+		background: $invicta-dblue;
+		color: #fff !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #fff !important;
+		}
+	}
+	&.whitebg {
+		background: #fff;
+	}
+	.entry-content {
+		max-width: 770px;
+		margin: 0 auto;
+		p {
+			font-size: 0.882em;
+			line-height: 1.8;
+		}
+	}
+	&.bl-align-left {
+		.entry-content {
+			max-width: 570px;
+			margin: 0;
+		}
+	}
+	&.bl-align-right {
+		@include for-tablets-up {
+			padding-left: 50%;
+		}
+		.entry-content {
+			max-width: 570px;
+			margin: 0;
+		}
+	}
+}

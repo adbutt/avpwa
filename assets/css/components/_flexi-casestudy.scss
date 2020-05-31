@@ -1,0 +1,101 @@
+.flexi-casestudy {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	clear: both;
+	background: $invicta-body;
+	.flex-mc-image {
+		flex: 0 0 100%;
+		display: block;
+		width: 100%;
+		max-width: 670px;
+		margin: 0 auto;
+		text-align: center;
+		@include for-tablets-up {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex: 0 1 70%;
+			margin: 0;
+			max-height: 400px;
+			overflow: hidden;
+		}
+		// min-height: 500px;
+	}
+	.flex-mc-content {
+		flex: 0 0 100%;
+		// padding: 60px;
+		font-size: 0.941em;
+		line-height: 1.6;
+		width: 100%;
+		max-width: 670px;
+		margin: 0 auto;
+		@include for-tablets-up {
+			padding: 60px;
+			flex: 0 1 30%;
+		}
+	}
+}
+.flexi-casestudy.unstyled-right {
+	border-top: none;
+	.flex-mc-image {
+		order: 1;
+		display: block;
+		background: transparent;
+		@include for-tablets-up {
+			order: 2;
+		}
+	}
+	.flex-mc-content {
+		order: 2;
+		@include for-tablets {
+			padding: 0 60px 0 0;
+		}
+		@include for-tablets-up {
+			order: 1;
+		}
+		@include for-desktop-up {
+			padding: 0 100px 0 0;
+		}
+	}
+}
+.flexi-casestudy.unstyled-left {
+	border-top: none;
+	.flex-mc-image {
+		display: block;
+		background: transparent;
+	}
+	.flex-mc-content {
+		@include for-tablets {
+			padding: 0 0 0 60px;
+		}
+		@include for-desktop-up {
+			padding: 0 100px 0 100px;
+		}
+	}
+}
+.flexi-casestudy {
+	.flex-mc-content {
+		font-size: 0.882em;
+		line-height: 1.8;
+		h3 {
+			font-size: 2.118em;
+			font-weight: 400;
+			color: $invicta-dblue;
+		}
+		.h4 {
+			font-size: 1.133em;
+			font-weight: 500;
+			color: $invicta-dblue;
+			padding-bottom: 10px;
+		}
+	}
+	.flexit {
+		display: flex;
+		flex-wrap: wrap;
+		@include for-tablets-up {
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}

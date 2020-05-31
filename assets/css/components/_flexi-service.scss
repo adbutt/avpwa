@@ -1,0 +1,1103 @@
+.sp-service-header {
+	background-color: $service-dblue;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	// @include for-tablets-up {
+	// 	background-image: url(../images/webdesign-development-header.png);
+	// 	background-position: 50% 50%;
+	// }
+	&--inner {
+		max-width: 1024px;
+		margin: 0 auto;
+		position: relative;
+		padding: 144px 15px;
+		text-align: center;
+		color: $service-white;
+		h1 {
+			display: block;
+			max-width: 800px;
+			margin: 0 auto;
+			@include for-desktop-up {
+				font-size: 4.118em;
+			}
+		}
+		h2 {
+			font-family: $font-base;
+			font-weight: 400;
+			font-size: 1.059em;
+			padding-top: 24px;
+			@include for-desktop-up {
+				font-size: 1.412em;
+			}
+		}
+
+		.gform_wrapper form {
+			text-align: left;
+			max-width: 100%;
+			margin: 0 auto;
+			padding-top: 16px;
+			@include for-desktop-up {
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				.gform_body {
+					width: 320px;
+				}
+				.gform_footer {
+					width: 175px;
+					margin: 0;
+					padding: 0;
+				}
+				input[type="text"] {
+					line-height: 1;
+				}
+			}
+		}
+		.gform_wrapper ul li.gfield {
+			margin-top: 0 !important;
+		}
+		.gform_wrapper input[type="text"] {
+			border: 1px solid $service-grey;
+			padding: 16px !important;
+			border-radius: 5px;
+			color: $service-white !important;
+		}
+		.gform_wrapper ::placeholder {
+			color: $service-white;
+			font-weight: 400;
+			font-size: 0.941em;
+			@include for-desktop-up {
+				font-size: 1.059em !important;
+			}
+		}
+		.gform_wrapper .gform_footer {
+			padding-top: 0;
+		}
+		.gform_wrapper .g-submit-button {
+			background-color: $service-white;
+			font-weight: 400;
+			text-align: center;
+			position: relative;
+			padding: 16px;
+			font-family: $font-base;
+			border-radius: 5px;
+			color: $service-blue;
+			transition: all 0.3s ease-in-out;
+			@include for-desktop-up {
+				min-width: 0;
+				font-size: 1.059em !important;
+			}
+			&:hover {
+				background-color: $service-lblue;
+				color: $white;
+			}
+		}
+		.gform_wrapper li.hidden_label input {
+			margin-top: 0;
+		}
+
+		.gform_footer {
+			& span:after {
+				display: none;
+			}
+		}
+		.gform_wrapper div.validation_error {
+			color: #fff;
+			font-size: 1em;
+			font-weight: 700;
+			margin-bottom: 25px;
+			border-top: 2px solid #790000;
+			border-bottom: 2px solid #790000;
+			padding: 16px 0;
+			clear: both;
+			width: 100%;
+			text-align: center;
+			flex: none;
+			position: absolute;
+			top: 0px;
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+		.gform_wrapper li.gfield.gfield_error {
+			background-color: transparent;
+			margin-bottom: 0 !important;
+			border: none;
+			padding-bottom: 0;
+			padding-top: 0;
+			box-sizing: border-box;
+			position: relative;
+		}
+		.validation_message {
+			color: $service-white !important;
+			font-weight: 500;
+			letter-spacing: normal;
+		}
+		&:after {
+			display: block;
+			content: "";
+			background-color: transparent;
+			background-image: url("../images/blue-triangle.svg");
+			width: 67px;
+			height: 70px;
+			position: absolute;
+			bottom: -48px;
+			left: 31px;
+			z-index: 2;
+		}
+	}
+	&.whitebg,
+	&.medbbg {
+		background-color: $white;
+		color: $service-dblue;
+		.validation_message {
+			color: $service-dblue !important;
+		}
+		.gform_wrapper div.validation_error {
+			color: $service-dblue;
+		}
+		.gform_wrapper .g-submit-button {
+			background-color: $service-lblue;
+			color: $white;
+			&:hover {
+				background-color: $service-dblue;
+			}
+		}
+		.gform_wrapper ::placeholder {
+			color: $service-dblue;
+		}
+		.gform_wrapper input[type="text"] {
+			border: 1px solid $service-dblue;
+			color: $service-dblue !important;
+		}
+		.sp-service-header--inner {
+			color: $service-dblue;
+		}
+	}
+	&.medbbg {
+		background-color: $service-white;
+	}
+}
+.spflexi-html-block {
+	position: relative;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	&--inner {
+		max-width: 1024px;
+		margin: 0 auto;
+		color: $service-dblue;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			color: $service-dblue;
+		}
+		h2 {
+			font-size: 1.765em;
+			font-weight: 500;
+			display: block;
+			position: relative;
+			@include for-desktop-up {
+				font-size: 3.611em;
+			}
+		}
+		p {
+			@include for-desktop-up {
+				font-size: 1.222em;
+			}
+		}
+		a.button,
+		p a.button {
+			display: inline-block;
+			padding: 24px 32px;
+			background-color: $service-white;
+			color: $service-dblue;
+			max-width: 300px;
+			min-width: 200px;
+			font-size: 1em;
+			border-radius: 5px;
+			font-weight: 400;
+			transition: all 0.3s ease-in-out;
+			&:after {
+				display: none;
+			}
+			&:hover {
+				background-color: $service-lblue;
+				color: $service-white;
+			}
+			@include for-desktop-up {
+				font-size: 1em;
+			}
+		}
+
+		color: $service-dblue;
+		padding: 96px 15px 112px;
+		text-align: center;
+		font-size: 1.059em;
+		.intro {
+			font-size: 0.778em;
+			font-weight: 500;
+			letter-spacing: 0.02em;
+			padding-bottom: 8px;
+			display: block;
+			@include for-desktop-up {
+				letter-spacing: 0.01em;
+				font-size: 1.333em;
+			}
+		}
+	}
+	&.whitebg {
+		background-color: #fff;
+		.spflexi-html-block--inner {
+		}
+	}
+	&.darkbbg {
+		background-color: $service-dblue;
+
+		.spflexi-html-block--inner {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p {
+				color: $service-white;
+			}
+			li {
+				color: $service-white !important;
+				font-size: 1.125em;
+				line-height: 1.4;
+				@include for-desktop-up {
+					font-size: 1.059em;
+				}
+			}
+		}
+	}
+	&.medbbg {
+		background: $service-white;
+		.spflexi-html-block--inner {
+		}
+	}
+	&:after {
+		display: block;
+		width: 100px;
+		height: 10px;
+		content: "";
+		background-color: $service-lblue;
+		position: absolute;
+		bottom: 88px;
+		left: calc(50% - 50px);
+		transform: rotate(-8deg);
+	}
+}
+.spflexi-media-content {
+	@extend .flexi-media-content;
+	position: relative;
+	padding-top: 72px;
+	padding-bottom: 72px;
+	.media-content-wrapper {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	&.whitebg {
+		color: $service-dblue;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $service-dblue;
+		}
+	}
+	&.darkbbg {
+		background: $service-dblue;
+		li {
+			color: $white !important;
+			font-size: 1.125em;
+			line-height: 1.4;
+			@include for-desktop-up {
+				font-size: 1.059em;
+			}
+		}
+	}
+	&.medbbg {
+		background: $service-white;
+		color: $service-dblue !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			color: $service-dblue !important;
+		}
+	}
+	.flex-mc-content {
+		font-size: 0.941em;
+		line-height: 1.5;
+		z-index: 2;
+		@include for-desktop-up {
+			font-size: 1.059em;
+		}
+		span.intro {
+			font-weight: 600;
+			padding-bottom: 8px;
+			display: block;
+			font-size: 0.824em;
+			@include for-desktop-up {
+				font-size: 1.25em;
+			}
+		}
+		h2 {
+			font-size: 1.765em;
+			font-weight: 500;
+			@include for-desktop-up {
+				font-size: 2.5em;
+			}
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding-top: 20px;
+			li {
+				padding-left: 24px;
+				position: relative;
+				color: $service-dblue;
+				line-height: 1.5;
+				padding-bottom: 24px;
+				&:before {
+					background-image: url("../images/bullet-triangle.svg");
+					background-repeat: no-repeat;
+					font-size: 1;
+					line-height: 15px;
+					height: 15px;
+					width: 15px;
+					content: "";
+					left: 0;
+					top: 6px;
+					padding-right: 8px;
+					position: absolute;
+				}
+			}
+		}
+	}
+	.flex-mc-image {
+		z-index: 2;
+	}
+}
+.spflexi-media-content.unstyled-right {
+	.flex-mc-image {
+		order: 2;
+		display: block;
+		background: transparent;
+		@include for-tablets-up {
+			order: 2;
+		}
+	}
+	.flex-mc-content {
+		padding-bottom: 64px;
+		order: 1;
+		@include for-tablets {
+			padding: 0 60px 0 0;
+		}
+		@include for-tablets-up {
+			order: 1;
+		}
+		@include for-desktop-up {
+			padding: 0 62px 0 0;
+		}
+	}
+}
+.spflexi-media-content.unstyled-left {
+	border-top: none;
+	.flex-mc-image {
+		display: block;
+		background: transparent;
+		padding-bottom: 40px;
+		@include for-desktop-up {
+			padding-bottom: 0;
+		}
+	}
+	.flex-mc-content {
+		@include for-tablets {
+			padding: 0 0 0 60px;
+		}
+		@include for-desktop-up {
+			padding: 0 62px 0 62px;
+		}
+	}
+}
+.splitter {
+	background-color: $white;
+	position: relative;
+	display: block;
+	height: 64px;
+	padding-top: 0;
+	&.gtw,
+	&.gtb {
+		background-color: $service-white;
+	}
+	&.btw,
+	&.btg {
+		background-color: $service-dblue;
+	}
+	@include for-desktop-up {
+		padding-top: 48px;
+	}
+	svg {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 64px;
+		// fill: $service-white;
+		/* set height to pixels if you want angle to change with screen width */
+		@include for-desktop-up {
+			height: 160px;
+		}
+	}
+	.splitter-inner {
+		max-width: 1024px;
+		margin: 0 auto;
+		position: relative;
+		&:before {
+			display: block;
+			content: "";
+			background: #fdb949;
+			height: 42px;
+			width: 42px;
+			border-radius: 21px;
+			position: absolute;
+			z-index: 2;
+			top: -15px;
+			left: 20px;
+		}
+		@include for-desktop-up {
+			&:before {
+				display: block;
+				content: "";
+				background: $service-yellow;
+				height: 86px;
+				width: 86px;
+				border-radius: 43px;
+				position: absolute;
+				z-index: 2;
+				top: -100px;
+				left: 20px;
+			}
+		}
+	}
+}
+
+.spflexi-standout-content {
+	padding: 15px;
+	position: relative;
+	&.whitebg {
+		background-color: #fff;
+	}
+	&.darkbbg {
+		background-color: $service-dblue;
+	}
+	&.medbbg {
+		background-color: $service-white;
+	}
+	&--inner {
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		max-width: 1024px;
+		padding: 56px 16px;
+		background-color: $white;
+		margin: 120px auto;
+		text-align: center;
+		box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
+		color: $service-dblue;
+		border-radius: 5px;
+		@include for-desktop-up {
+			margin: 140px auto;
+			box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+			padding: 64px 104px;
+			font-size: 1.412em;
+		}
+		&:before,
+		&:after {
+			display: block;
+			content: "";
+			background-image: url(../images/straight-dots.svg);
+			width: 4px;
+			height: 100px;
+			position: absolute;
+			left: calc(50% - 2px);
+		}
+		&:before {
+			top: -104px;
+		}
+		&:after {
+			bottom: -104px;
+		}
+		span.intro {
+			font-weight: 600;
+			padding-bottom: 8px;
+			display: block;
+			font-size: 0.824em;
+			@include for-desktop-up {
+				font-size: 0.958em;
+			}
+		}
+		h3 {
+			font-size: 1.765em;
+			font-weight: 500;
+			@include for-desktop-up {
+				font-size: 1.875em;
+			}
+		}
+	}
+	&--innerc {
+		position: relative;
+		&:after {
+			display: block;
+			width: 100px;
+			height: 5px;
+			content: "";
+			background-color: $service-lblue;
+			position: absolute;
+			bottom: -32px;
+			left: calc(50% - 50px);
+			transform: rotate(-8deg);
+		}
+	}
+	&:before {
+		@include for-desktop-up {
+			display: block;
+			content: "";
+			background-image: url(../images/orange-triangle.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 154px;
+			height: 154px;
+			position: absolute;
+			top: 240px;
+			left: 50px;
+		}
+	}
+}
+.spflexi-process-wrapper {
+	@extend .process-wrapper;
+	padding-top: 40px;
+	background: $service-white;
+	position: relative;
+	span.intro {
+		font-weight: 600;
+		padding-bottom: 8px;
+		display: block;
+		font-size: 0.824em;
+		color: $service-dblue;
+		@include for-desktop-up {
+			font-size: 1.25em;
+		}
+	}
+	h3 {
+		display: inline-block;
+		color: $service-dblue;
+		font-weight: 500;
+		font-size: 1.765em;
+		margin-top: 5px;
+		margin-bottom: 0;
+		padding-bottom: 48px;
+		position: relative;
+		z-index: 3;
+		@include for-desktop-up {
+			font-size: 2.647em;
+		}
+	}
+	&.whitebg {
+		background: #fff;
+	}
+	&.darkbbg {
+		background: $service-dblue;
+		h3,
+		span.intro {
+			color: $service-white;
+		}
+		.process-container {
+			.process-item h4,
+			.process-intro {
+				color: $service-white !important;
+			}
+		}
+	}
+	&.medbbg {
+		background: $service-white;
+	}
+	.process-container {
+		max-width: 1024px;
+		margin: 0 auto;
+		padding-bottom: 62px;
+		@include for-desktop-up {
+			padding-bottom: 120px;
+		}
+		.process-item {
+			padding: 20px 0;
+			position: relative;
+			z-index: 2;
+			h4 {
+				font-family: $font-base;
+				font-size: 1.176em;
+				font-weight: 600;
+				margin-top: 20px;
+				color: $service-dblue;
+			}
+			@include for-phones {
+				flex-basis: calc(100% - 12px);
+				align-items: center;
+				max-width: 244px;
+				margin: 0 auto;
+				// border: 1px solid #000;
+				// justify-content: center;
+			}
+			@include for-tablets {
+				flex-basis: calc(50% - 12px);
+				align-items: center;
+			}
+			@include for-desktop-up {
+				flex-basis: calc(25% - 12px);
+				padding: 6px;
+			}
+			.process-icon {
+				display: flex;
+				width: 135px;
+				height: 135px;
+				align-items: center;
+				justify-content: center;
+				background-color: transparent;
+			}
+			.process-intro {
+				font-size: 0.941em;
+				line-height: 1.625;
+				color: $service-dblue;
+			}
+		}
+	}
+	&:after {
+		@include for-desktop-up {
+			display: block;
+			content: "";
+			background-color: $service-grey;
+			background-repeat: no-repeat;
+			width: 416px;
+			height: 156px;
+			position: absolute;
+			right: -200px;
+			top: 200px;
+			transform: rotate(-40deg);
+		}
+	}
+	&.darkbbg:after {
+		@include for-desktop-up {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+}
+.spflexi-image-title {
+	padding: 64px 32px;
+	position: relative;
+	@include for-desktop-up {
+		padding: 128px 32px;
+	}
+	&--inner {
+		max-width: 870px;
+		margin: 0 auto;
+		text-align: center;
+		h3 {
+			position: relative;
+			color: $service-dblue;
+			font-size: 1.765em;
+			padding-bottom: 40px;
+			@include for-desktop-up {
+				font-size: 2.647em;
+				padding-bottom: 60px;
+			}
+		}
+		span.intro {
+			font-weight: 600;
+			padding-bottom: 8px;
+			display: block;
+			font-size: 0.824em;
+			color: $service-dblue;
+			@include for-desktop-up {
+				font-size: 1.25em;
+			}
+		}
+	}
+	&.darkbbg {
+		background-color: $service-dblue;
+		h3,
+		span.intro {
+			color: $service-white;
+		}
+	}
+	&.size-full-width {
+		.spflexi-image-title--inner {
+			max-width: 2000px;
+		}
+	}
+}
+
+.spflexi-title-content {
+	padding: 60px 0;
+	.pl0 {
+		padding-left: 0;
+	}
+	&.lightbbg {
+		background: $invicta-body;
+	}
+	&.medbbg {
+		background: $service-white;
+	}
+	&.darkbbg {
+		background: $service-dblue;
+		color: #fff !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		h4.title-content,
+		.t-title {
+			color: #fff !important;
+		}
+	}
+	&.whitebg {
+		background: #fff;
+	}
+	h4.title-content {
+		color: $service-dblue;
+	}
+	.title-wrap {
+		flex: 0 0 100%;
+		@include for-tablets-up {
+			flex: 0 1 50%;
+		}
+	}
+	.t-title {
+		font-size: 2.118em;
+		color: $service-dblue;
+		box-sizing: border-box;
+		// max-width: 470px;
+	}
+	.t-copy {
+		flex: 0 0 100%;
+		font-size: 0.882em;
+		line-height: 1.8;
+		@include for-tablets-up {
+			flex: 0 1 50%;
+		}
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+		h3 {
+			font-size: 2.118em;
+			font-weight: 400;
+			color: $service-dblue;
+		}
+		h4 {
+			font-size: 1.133em;
+			font-weight: 500;
+			color: $service-dblue;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			li {
+				padding-left: 30px;
+				position: relative;
+				color: $service-dblue;
+				&:before {
+					font-family: "dashicons";
+					font-size: 2em;
+					line-height: 1;
+					content: "\f147";
+					color: $invicta-green;
+					left: -5px;
+					padding-right: 10px;
+					position: absolute;
+				}
+			}
+		}
+	}
+	.flexit {
+		display: flex;
+		flex-wrap: wrap;
+		@include for-tablets-up {
+			flex-wrap: nowrap;
+			// justify-content: center;
+			// align-items: center;
+		}
+	}
+	&.ftc-right .t-title {
+		order: 1;
+		padding: 0 0 40px;
+		@include for-tablets {
+			order: 2;
+			padding: 0;
+		}
+		@include for-desktop-up {
+			order: 2;
+			padding: 0;
+		}
+	}
+	&.ftc-right .title-wrap {
+		order: 2;
+		box-sizing: border-box;
+		@include for-tablets {
+			order: 1;
+			padding: 0 0 0 60px;
+			max-width: 470px;
+		}
+		@include for-desktop-up {
+			order: 1;
+			padding: 0 0 0 100px;
+			// max-width: 470px;
+		}
+	}
+	&.ftc-left .title-wrap {
+		padding: 0 0 40px;
+		@include for-tablets {
+			padding: 0 60px 0 0;
+		}
+		@include for-desktop-up {
+			padding: 0 100px 0 0;
+		}
+	}
+
+	color: $service-dblue !important;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	h4.title-content,
+	.t-title {
+		color: $service-dblue !important;
+	}
+	&.darkbbg {
+		background: $service-dblue;
+	}
+	&.medbbg {
+		background: $service-white;
+		color: $service-dblue !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		h4.title-content,
+		.t-title {
+			color: $service-dblue !important;
+		}
+	}
+	h4.title-content {
+		font-family: $font-base;
+		font-size: 0.824em;
+		font-weight: 500;
+		margin-bottom: 0;
+		@include for-desktop-up {
+			font-size: 1.176em;
+		}
+	}
+	.t-title {
+		font-family: $font-headings;
+		font-size: 1.765em;
+		position: relative;
+		@include for-desktop-up {
+			font-size: 3.824em;
+			line-height: 1.4;
+
+			&:after {
+				display: block;
+				content: "";
+				background-color: $service-lblue;
+				height: 10px;
+				width: 100px;
+				transform: rotate(8deg);
+				position: absolute;
+				bottom: -40px;
+			}
+		}
+	}
+	.title-content-wrapper {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	.t-copy {
+		font-size: 1.059em;
+		line-height: 1.4;
+		font-weight: 400;
+		@include for-desktop-up {
+			font-size: 1.294em;
+			line-height: 1.4;
+		}
+	}
+}
+
+.spflexi-copy {
+	@extend .flexi-copy;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	.entry-content {
+		max-width: 1024px;
+		font-size: 18px;
+		h2 {
+			@include for-desktop-up {
+				font-size: 3.611em;
+				margin-bottom: 40px;
+			}
+		}
+		p {
+			font-size: 1em;
+			@include for-desktop-up {
+				font-size: 1.167em;
+			}
+		}
+		a.button,
+		p a.button {
+			display: inline-block;
+			padding: 24px 32px;
+			background-color: $service-white;
+			color: $service-dblue;
+			max-width: 300px;
+			min-width: 200px;
+			font-size: 1em;
+			border-radius: 5px;
+			font-weight: 400;
+			transition: all 0.3s ease-in-out;
+			&:after {
+				display: none;
+			}
+			&:hover {
+				background-color: $service-lblue;
+				color: $service-white;
+			}
+			@include for-desktop-up {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+.splitter-single {
+	background: $white;
+	position: relative;
+	display: block;
+	padding-top: 0;
+	z-index: 2;
+	@include for-desktop-up {
+		padding-top: 48px;
+	}
+	svg {
+		position: absolute;
+		top: -64px;
+		width: 100%;
+		height: 64px;
+		margin-bottom: -320px;
+		// fill: $service-white;
+		/* set height to pixels if you want angle to change with screen width */
+		@include for-desktop-up {
+			top: -320px;
+			height: 320px;
+		}
+	}
+}
+
+.spflexi-callout {
+	padding: 56px 16px;
+	background-color: #fff;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	.sp-call-out-wrapper {
+		max-width: 1024px;
+		margin: 0 auto;
+		position: relative;
+		span.intro {
+			font-weight: 400;
+			margin-bottom: 1.5em;
+			display: block;
+			font-size: 1.059em;
+			color: $service-dblue;
+			@include for-desktop-up {
+				font-size: 1.25em;
+			}
+		}
+		h3 {
+			display: inline-block;
+			color: $service-dblue;
+			font-weight: 500;
+			font-size: 1.8em;
+			margin-top: 5px;
+			margin-bottom: 0;
+			padding-bottom: 40px;
+			position: relative;
+			z-index: 3;
+			@include for-desktop-up {
+				font-size: 3.824em;
+			}
+		}
+		a.button,
+		p a.button {
+			display: inline-block;
+			padding: 24px 32px;
+			background-color: $service-lblue;
+			color: $service-white;
+			max-width: 300px;
+			min-width: 200px;
+			font-size: 1em;
+			border-radius: 5px;
+			font-weight: 400;
+			transition: all 0.3s ease-in-out;
+			&:after {
+				display: none;
+			}
+			&:hover {
+				background-color: $service-dblue;
+				color: $service-white;
+			}
+			@include for-desktop-up {
+				font-size: 1.235em;
+			}
+		}
+	}
+	&.medbbg {
+		background-color: $service-white;
+	}
+	&.darkbbg {
+		background-color: $service-dblue;
+		h3,
+		span.intro {
+			color: $service-white;
+		}
+		a.button,
+		p a.button {
+			background-color: $service-white;
+			color: $service-dblue;
+			&:hover {
+				background-color: $service-lblue;
+				color: $service-white;
+			}
+		}
+	}
+}

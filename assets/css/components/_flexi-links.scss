@@ -1,0 +1,102 @@
+.links-wrapper {
+	// border-top: 10px solid $harry-dblue;
+	padding: 60px 0;
+	text-align: center;
+
+	.lcopy-wrap {
+		max-width: 630px;
+		margin: 0 auto;
+		font-size: 0.882em;
+		line-height: 1.8;
+
+		h4 {
+			font-weight: 500;
+			color: $invicta-dblue;
+			font-size: 1.133em;
+		}
+	}
+	.stitle-hold {
+		font-size: 0.882em;
+	}
+	.links-container {
+		// text-align: left;
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: baseline;
+		// justify-content: center;
+		border-top: 1px solid $invicta-lgrey;
+		border-bottom: 1px solid $invicta-lgrey;
+		.process-item {
+			// margin: 0 auto;
+			margin: 10px 0;
+			position: relative;
+			border-left: 1px solid $invicta-lgrey;
+			// min-width: 200px;
+			padding: 20px 40px;
+			// text-align: left;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			box-sizing: border-box;
+			min-height: 80px;
+			@include for-tablets {
+				flex-basis: calc(50% - 12px);
+				align-items: center;
+				&:nth-child(odd) {
+					border-left: none;
+				}
+				// border: 1px solid #000;
+				// justify-content: center;
+			}
+			@include for-phones {
+				flex-basis: 100%;
+				text-align: center;
+				align-items: center;
+				padding: 5px 40px;
+				margin-bottom: 0;
+				border-left: none;
+				&:last-of-type {
+					margin-bottom: 10px;
+				}
+				// border-bottom: 1px solid #bada55;
+			}
+			a.llist {
+				font-size: 0.882em;
+				color: $invicta-dblue;
+				font-weight: 500;
+				position: relative;
+				padding-left: 10px;
+				display: block;
+				min-height: 30px;
+				&:hover {
+					color: $invicta-lblue;
+				}
+				&:before {
+					content: url(../images/file-icon-blue.png);
+					height: 30px;
+					width: 30px;
+					line-height: 1;
+					display: inline-block;
+					padding-right: 10px;
+					position: relative;
+					// left: -10px;
+					top: 8px;
+				}
+			}
+			.llist {
+				font-size: 0.882em;
+				color: $invicta-dblue;
+				font-weight: 500;
+				position: relative;
+				padding-left: 10px;
+				display: block;
+				line-height: 30px;
+			}
+			&:first-of-type {
+				border-left: 0;
+			}
+		}
+	}
+}

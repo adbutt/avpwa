@@ -1,0 +1,45 @@
+.flexi-image {
+    text-align:center;
+    padding:60px 0;
+    &.lightbbg {
+        background:$invicta-body;
+    }
+    &.medbbg {
+        background:$invicta-lblue;
+        color:#fff!important;
+        h1, h2, h3, h4, h5, h6 {
+			color:#fff!important;
+		}
+    }
+    &.darkbbg {
+        background:$invicta-dblue;
+        color:#fff!important;
+        h1, h2, h3, h4, h5, h6 {
+			color:#fff!important;
+		}
+    }
+    &.whitebg {
+        background:#fff;
+    }
+    &.size-contained {
+        .grid-container {
+            padding-left:0;
+            padding-right:0;
+        }
+        img {
+            width:100%;
+        }
+    }
+    &.size-full-width {
+        padding:0;
+        background: transparent;
+        .grid-container {
+            padding-left:0;
+            padding-right:0;
+            max-width: 100%;
+        }
+        img {
+            width:100%;
+        }
+    }
+}

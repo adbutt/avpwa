@@ -1,0 +1,28 @@
+.featured-products {
+	border-top: 10px solid $harry-dblue;
+	text-align: center;
+	h3 {
+		display: inline-block;
+		padding: 15px 60px;
+		background: $harry-blue;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 1.529em;
+		margin-top: -30px;
+		margin-bottom: 40px;
+	}
+	.woocommerce ul.products li.product .woocommerce-loop-product__title {
+		color: $harry-mgrey;
+		font-family: $font-headings;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: 0.824em;
+	}
+	.woocommerce ul.products li.product .price {
+		color: $harry-lblue;
+		font-family: $font-headings;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: 0.824em;
+	}
+}

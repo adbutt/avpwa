@@ -1,0 +1,104 @@
+// .services-wrapper {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	align-items: center;
+// 	justify-content: space-between;
+// 	margin: 20px -10px 80px;
+// 	.service-item {
+// 		flex: 1 0 21%; /* explanation below */
+// 		margin: 10px 10px;
+// 		min-height: 200px;
+// 		position: relative;
+// 		background-position: center center;
+// 		background-size: cover;
+// 		cursor: pointer;
+
+// 		.service-title {
+// 			display: inline-block;
+// 			min-width: 180px;
+// 			text-align: center;
+// 			padding: 10px 20px;
+// 			background: $harry-black;
+// 			color: #fff;
+// 			font-family: $font-headings;
+// 			font-size: 18px;
+// 			position: absolute;
+// 			bottom: 0;
+// 			left: 50%;
+// 			transform: translateX(-50%);
+// 			z-index: 4;
+// 			text-transform: uppercase;
+// 		}
+// 		.service-mask {
+// 			display: block;
+// 			background: rgba(0, 0, 0, 0.4);
+// 			width: 100%;
+// 			height: 100%;
+// 			position: absolute;
+// 			z-index: 3;
+// 			transition: 0.3s opacity ease-in-out;
+// 			opacity: 1;
+// 		}
+// 		&:hover .service-mask {
+// 			opacity: 0;
+// 		}
+// 	}
+// }
+.service-banner {
+	margin-top: 40px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+	@include for-desktop-up {
+		flex-direction: row;
+	}
+	// min-height: 600px;
+	.service-details {
+		width: 100%;
+		max-width: 670px;
+		margin: 0 auto;
+		flex: 0 0 100%;
+		padding: 40px 0;
+		@include for-desktop-up {
+			width: 30%;
+			max-width: 470px;
+			flex: 0 1 auto;
+			margin: 0;
+		}
+	}
+	.service-branding {
+		flex: 0 0 100%;
+		width: 100%;
+		background-size: cover;
+		min-height: 400px;
+		max-width: 670px;
+		margin: 0 auto;
+
+		@include for-desktop-up {
+			width: 70%;
+			flex: 0 1 auto;
+			margin: 0 0 0 auto;
+		}
+	}
+	.service-title {
+		font-size: 2.118em;
+		color: $invicta-dblue;
+		font-weight: 300;
+		em {
+			font-weight: 600;
+		}
+	}
+	.service-sub {
+		color: $invicta-dblue;
+		font-weight: 500;
+		padding-bottom: 30px;
+	}
+	.service-copy {
+		font-size: 0.882em;
+		line-height: 1.8;
+	}
+	.service-link {
+		padding-top: 30px;
+	}
+}

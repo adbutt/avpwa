@@ -1,0 +1,47 @@
+.page-banner {
+	min-height: 300px;
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+	h1 {
+		position: relative;
+		padding-top: 25vh;
+		font-size: 60px;
+		font-weight: 800;
+		text-transform: uppercase;
+		color: #fff;
+		margin-bottom: 10px;
+		z-index: 2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(#1a1a1a),
+			to(transparent)
+		);
+		background-image: linear-gradient(to right, #1a1a1a, transparent);
+		opacity: 0.8;
+		z-index: 1;
+	}
+}
+.breadcrumb-wrapper {
+	background: $harry-grey;
+	padding: 10px 0;
+	border-bottom: 10px solid $harry-black;
+	.breadcrumbs {
+		font-size: 0.882em;
+		color: $harry-crumbs;
+		font-weight: 700;
+		a {
+			color: #fff;
+		}
+	}
+}

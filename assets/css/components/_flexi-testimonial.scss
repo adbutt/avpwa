@@ -1,0 +1,60 @@
+.flexi-testimonial {
+	padding: 60px 10px;
+	background-color: $invicta-body;
+	&-wrapper {
+		max-width: 770px;
+		margin: 0 auto;
+	}
+	p.testimonial-quote {
+		font-weight: 300;
+		font-size: 18px;
+		position: relative;
+		@include for-tablets {
+			font-size: 20px;
+		}
+		@include for-desktop-up {
+			font-size: 22px;
+			padding: 40px;
+			background: #fff;
+			border-radius: 20px;
+		}
+		@include for-desktop-up {
+			&:after {
+				display: block;
+				content: '';
+				width: 40px;
+				height: 40px;
+				background: #fff;
+				position: absolute;
+				bottom: -15px;
+				transform: rotate(45deg);
+			}
+		}
+	}
+	.testimonial-author {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		flex-wrap: nowrap;
+		margin-top: 30px;
+		&-image {
+			border-radius: 50%;
+			overflow: hidden;
+			margin-right: 28px;
+			width: 123px;
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+		h3 {
+			color: $invicta-dblue;
+			font-weight: 500;
+			margin-bottom: 5px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,603 @@
+body {
+	background: #fff;
+}
+.site-wrapper {
+	background-color: #fff;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.site-content {
+	overflow: hidden;
+	min-height: 800px;
+}
+.hero-slides {
+	background-image: linear-gradient($avpwa-purple, $avpwa-dpurple);
+	background-color: $avpwa-purple;
+	padding-bottom: 40px;
+}
+.slick-slide {
+	.slide-wrap {
+		@include for-tablets-up {
+			display: flex;
+		}
+		.slide-content {
+			width: 100%;
+			padding-bottom: 40px;
+			@include for-tablets-up {
+				width: 40%;
+			}
+			h2 {
+				color: $white;
+				font-size: 36px;
+			}
+			span {
+				color: $white;
+				a {
+					color: $white;
+				}
+			}
+		}
+		.slide-image {
+			min-height: 280px;
+			width: 100%;
+			background-position: 50% 50%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-left: auto;
+			@include for-tablets-up {
+				width: 50%;
+			}
+		}
+	}
+}
+.features {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 80px;
+	@include for-tablets-up {
+		flex-wrap: nowrap;
+	}
+	.feature {
+		padding: 20px;
+		text-align: center;
+		h3 {
+			text-align: center;
+			font-size: 30px;
+			color: $avpwa-purple;
+		}
+		p {
+			text-align: left;
+			font-size: 15px;
+		}
+		a {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: $avpwa-purple;
+			color: $white;
+			text-decoration: none;
+			border-radius: 3px;
+			font-size: 14px;
+			transition: all 0.3s ease;
+			&:hover {
+				background-color: $avpwa-dpurple;
+			}
+		}
+		.feature-image {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100px;
+			img {
+				max-width: 80px;
+				opacity: 0.2;
+			}
+		}
+	}
+}
+.stories {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 60px 0;
+	@include for-tablets-up {
+		flex-wrap: nowrap;
+	}
+	.story {
+		padding: 20px;
+		text-align: left;
+		@include for-tablets-up {
+			width: 33%;
+		}
+		h3 {
+			text-align: left;
+			font-size: 24px;
+			color: $avpwa-purple;
+			padding-top: 10px;
+			@include for-tablets-up {
+				padding-top: 0;
+			}
+		}
+		p {
+			text-align: left;
+			font-size: 15px;
+		}
+		a {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: $avpwa-purple;
+			color: $white;
+			text-decoration: none;
+			border-radius: 3px;
+			font-size: 14px;
+			transition: all 0.3s ease;
+			&:hover {
+				background-color: $avpwa-dpurple;
+			}
+		}
+		.story-image {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include for-tablets-up {
+				min-height: 200px;
+			}
+
+			img {
+			}
+		}
+	}
+}
+.testimonials-wrapper {
+	h2 {
+		color: $avpwa-purple;
+	}
+}
+.testimonials {
+	.testimonial {
+		position: relative;
+		padding: 20px 0;
+		.testimonial-content {
+			max-width: 650px;
+			margin: 0 auto;
+			position: relative;
+			padding: 20px 40px;
+			&:before {
+				content: "";
+				background-image: url("../images/quote.svg");
+				background-size: contain;
+				width: 30px;
+				height: 30px;
+				opacity: 0.2;
+				position: absolute;
+				top: 5px;
+				left: 0;
+			}
+			p {
+				font-size: 20px;
+			}
+		}
+	}
+}
+// .hero-wrapper {
+// 	max-width: 1170px;
+// 	margin: 0 auto;
+// 	@include for-tablets-up {
+// 		padding: 100px 0;
+// 	}
+// }
+// .hero-heads {
+// 	font-size: 1.5em;
+// 	text-align: center;
+// 	font-weight: 300;
+// 	margin: 40px 0 20px;
+// 	// line-height: 1.25;
+// 	color: $invicta-dblue;
+// 	font-family: $font-headings;
+// 	@include for-tablets-up {
+// 		// text-align: left;
+// 		font-size: 2.25em;
+// 		margin: 0;
+// 	}
+// 	em {
+// 		font-weight: 600;
+// 	}
+// }
+// .hero-sub {
+// 	font-size: 0.938em;
+// 	letter-spacing: 0.025em;
+// 	color: $invicta-primary;
+// 	text-align: center;
+// 	padding-bottom: 80px;
+// 	@include for-tablets-up {
+// 		line-height: 3;
+// 		padding-bottom: 60px;
+
+// 		// text-align: left;
+// 	}
+// }
+.latest-work .section-titles,
+.our-services .section-titles {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.section-title {
+		width: 50%;
+		display: block;
+		padding: 0;
+	}
+}
+.section-titles {
+	padding-bottom: 30px;
+	clear: both;
+	.section-title {
+		padding-left: 0;
+		font-weight: 500;
+		color: $invicta-dblue;
+		font-size: 1.063em;
+	}
+	.section-link {
+		padding-right: 0;
+	}
+	a {
+		padding-right: 36px;
+		text-align: right;
+		font-size: 0.813em;
+		display: block;
+		position: relative;
+		font-weight: 500;
+		color: $invicta-primary;
+		&::after {
+			content: "\2192";
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 36px;
+			display: block;
+		}
+		&:hover {
+			color: $invicta-dblue;
+		}
+	}
+}
+.folio-wrapper {
+	// max-width: 1440px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+	@include for-tablets-up {
+		display: flex;
+	}
+	.col1 {
+		width: 100%;
+		background-color: #dbdbd9;
+		border-right: 2px solid #fff;
+		overflow: hidden;
+		@include for-tablets-up {
+			width: 70%;
+		}
+		.main-mainimage {
+			min-height: 300px;
+			background-size: cover;
+			background-position: 50% 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			transition: all 0.5s;
+			will-change: transform;
+			@include for-tablets-up {
+				min-height: 600px;
+			}
+		}
+		&:hover .main-mainimage {
+			transform: scale(1.1);
+		}
+		a {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			min-height: 300px;
+			text-align: center;
+			justify-content: center;
+			align-items: flex-end;
+			// opacity: 0;
+			@include for-tablets-up {
+				min-height: 600px;
+			}
+			&:hover .project-mask {
+				opacity: 1;
+			}
+			&:hover .main-result-details {
+				transform: translateY(-40%);
+			}
+			.main-result {
+				.main-result-details {
+					transition: all 0.5s;
+					will-change: transform;
+					p {
+						font-size: 1.5em;
+						@include for-tablets {
+							font-size: 1.75em;
+						}
+						@include for-desktop-up {
+							font-size: 2em;
+						}
+						font-weight: 300;
+						color: #fff;
+						margin-bottom: 0;
+					}
+				}
+				z-index: 9999;
+				display: block;
+				// background: rgba(4, 30, 64, 0.4);
+				background: rgb(4, 30, 64);
+				background: linear-gradient(
+					0deg,
+					rgba(4, 30, 64, 0.9) 0%,
+					rgba(4, 30, 64, 0.9) 35%,
+					rgba(4, 30, 64, 0) 100%
+				);
+				padding: 20px 0;
+				width: 100%;
+				img {
+					max-height: 80px;
+				}
+				span {
+					font-weight: 500;
+				}
+			}
+		}
+	}
+	.col2 {
+		width: 100%;
+		display: flex;
+		overflow: hidden;
+		@include for-tablets-up {
+			display: block;
+			width: 30%;
+		}
+		.main-folio {
+			width: 50%;
+			overflow: hidden;
+			transition: all 0.5s;
+			will-change: transform;
+			min-height: 200px;
+			max-height: 200px;
+			background-color: #fff;
+			background-size: cover;
+			background-position: 50% 50%;
+			position: relative;
+			margin-top: 2px;
+			@include for-tablets-up {
+				margin-top: 0;
+				width: 100%;
+				min-height: 299px;
+				max-height: 299px;
+			}
+			&.folio-2 {
+				background-color: #fff;
+				margin-top: 2px;
+				margin-left: 2px;
+				@include for-tablets-up {
+					margin-left: 0;
+				}
+			}
+
+			a {
+				display: flex;
+				width: 100%;
+				height: 100%;
+				min-height: 200px;
+				@include for-tablets-up {
+					min-height: 299px;
+				}
+				text-align: center;
+				justify-content: center;
+				align-items: flex-end;
+				&:hover .project-mask {
+					opacity: 1;
+				}
+				&:hover .result-details {
+					transform: translateY(-10%);
+				}
+				.result {
+					.result-details {
+						transition: all 0.5s;
+						will-change: transform;
+						p {
+							font-size: 1em;
+							font-weight: 300;
+							color: #fff;
+							margin-bottom: 0;
+						}
+					}
+					z-index: 9999;
+					display: block;
+					// background: rgba(4, 30, 64, 0.4);
+					background: rgb(4, 30, 64);
+					background: linear-gradient(
+						0deg,
+						rgba(4, 30, 64, 0.9) 0%,
+						rgba(4, 30, 64, 0.9) 35%,
+						rgba(4, 30, 64, 0) 100%
+					);
+					padding: 20px 0;
+					width: 100%;
+					img {
+						max-height: 60px;
+						@include for-tablets-up {
+							max-height: 80px;
+						}
+					}
+					span,
+					em,
+					strong {
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		// &:hover .main-folio {
+		// 	transform: scale(1.2);
+		// }
+	}
+	.project-link {
+		.project-mask {
+			display: block;
+			background: rgba(4, 30, 64, 0.4);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 3;
+			transition: 0.3s opacity ease-in-out;
+			opacity: 0.3;
+		}
+	}
+}
+
+.our-services {
+	.section-callout {
+		margin-top: 30px;
+	}
+}
+.service-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.service {
+		display: flex;
+		margin-top: 30px;
+		border-bottom: 1px solid #ededed;
+		width: 100%;
+		// align-items: center;
+		&:last-of-type {
+			border-bottom: none;
+		}
+		@include for-tablets-up {
+			flex: 0 50%;
+			max-width: 570px;
+			&:last-of-type {
+				border-bottom: 1px solid #ededed;
+			}
+		}
+	}
+	.cbox:hover {
+		.service-title {
+			color: $invicta-lblue;
+		}
+	}
+}
+.service-intro-wrap {
+	padding-left: 30px;
+
+	.service-title {
+		color: $invicta-dblue;
+		font-size: 0.938em;
+		font-weight: 500;
+		margin: 10px 0;
+		line-height: 1;
+		transition: all 0.3s ease-in-out;
+	}
+	p.service-intro {
+		font-size: 0.882em;
+	}
+}
+.service-icon-wrapper {
+	background: $invicta-icon;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	width: 48px;
+	border-radius: 3px;
+}
+
+.callout-wrapper {
+	// max-width: 1440px;
+	margin: 100px auto 40px;
+	background-color: $invicta-dblue;
+	background-image: url("../images/call-out-background.jpg");
+	background-size: cover;
+	padding: 180px 0 140px;
+	.callout-wrap {
+		@include for-tablets-up {
+			display: flex;
+		}
+	}
+	.callout-intro {
+		width: 100%;
+		max-width: 570px;
+		.callout-title {
+			color: #fff;
+			font-weight: 500;
+			position: relative;
+			text-align: center;
+			&:before {
+				display: block;
+				content: url("../images/branding-invicta.png");
+				position: absolute;
+				top: -50px;
+				left: 50%;
+				margin-left: -24px;
+				@include for-tablets-up {
+					left: 0;
+					margin-left: 0;
+				}
+			}
+			@include for-tablets-up {
+				text-align: left;
+			}
+		}
+		.callout-copy {
+			font-size: 1em;
+			color: #fff;
+			font-weight: 400;
+			padding-top: 20px;
+			p {
+				text-align: center;
+				font-size: 1.5em;
+				@include for-tablets-up {
+					text-align: left;
+					font-size: 2em;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.callout-action {
+		margin-left: auto;
+		margin-top: auto;
+
+		a {
+			display: block;
+			background-color: $invicta-lblue;
+			color: #fff;
+			padding: 20px;
+			position: relative;
+			font-size: 0.765em;
+			font-weight: 500;
+			text-align: center;
+			box-sizing: border-box;
+			@include for-tablets-up {
+				text-align: left;
+				min-width: 370px;
+				width: 100%;
+			}
+			&::after {
+				content: "\2192";
+				position: absolute;
+				width: 36px;
+				margin-left: 5px;
+				display: inline-block;
+				@include for-tablets-up {
+					margin-left: 20px;
+				}
+			}
+			&:hover {
+				background-color: $invicta-lbhover;
+			}
+		}
+	}
+}

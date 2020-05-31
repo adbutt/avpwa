@@ -1,0 +1,58 @@
+.faq-wrapper {
+   padding:0 0 40px;
+   .faq-copy-wrap {
+       @include for-desktop-up {
+            padding: 0 100px
+       }
+        h3 {
+            font-size: 2.118em;
+            font-weight: 400;
+            color: $invicta-dblue;
+        }
+    }
+    .faq-container {
+        @include for-desktop-up {
+            padding: 0 100px
+       }
+    }
+    .faq-item {
+        // max-width:630px;
+        // margin:0 auto 10px;
+        border-bottom:1px solid $invicta-body;
+        padding:20px;
+
+        .faqq {
+            position:relative;
+            cursor:pointer;
+            strong {
+                color: $invicta-dblue;
+                font-weight: 500;
+                padding: 10px 0;
+                display:block;
+                width:100%;
+            }
+            &:after {
+                content: '';
+                background: url('../images/down-carot.svg') center no-repeat;
+                background-size: contain;
+                width: 1.5em;
+                height: .95454545em;
+                position: absolute;
+                right: .5em;
+                top: calc(50% - (7 / 22 * 1.5em));
+                transition: transform 200ms ease-in-out;
+            }
+        }
+        .faqq.active:after {
+            transform: rotateX(180deg);
+        }
+        .faqa {
+            display:none;
+            padding-right:40px;
+        }
+        p {
+            font-size:0.882em;
+            line-height:1.8;
+        }
+    }
+}

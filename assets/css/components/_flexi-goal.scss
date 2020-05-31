@@ -1,0 +1,45 @@
+.flexi-goals {
+	padding: 0 0 60px;
+	.goal-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.goal-content,
+		.goal-image {
+			width: 100%;
+			box-sizing: border-box;
+			@include for-tablets-up {
+				width: 50%;
+			}
+		}
+		.goal-content {
+			padding: 4% 8%;
+			h6 {
+				margin-bottom: 10px;
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 0.15em;
+				font-weight: 300;
+				font-size: 0.882em;
+			}
+			p {
+				font-size: 1.412em;
+				color: #fff;
+				font-weight: 500;
+				margin-bottom: 0;
+			}
+			img {
+				// margin-left: -8%;
+				margin-bottom: 10%;
+			}
+		}
+		.goal-image {
+			background-size: cover;
+			background-position: 50% 50%;
+			min-height: 350px;
+		}
+		.goal-image.bg-color {
+			min-height: 0;
+		}
+	}
+}
