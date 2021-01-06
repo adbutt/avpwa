@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@wordpress/eslint-plugin": "^4.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "eslint-plugin-vue": "^6.2.2",
     "regenerator-runtime": "^0.13.5",
     "vue": "^2.5.11",
